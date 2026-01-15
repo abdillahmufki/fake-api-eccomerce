@@ -19,11 +19,13 @@ const ENDPOINTS = [
       limit: 5,
       search: "",
       body: {
-        name: "Produk Baru",
-        price: 150000,
-        description: "Deskripsi produk",
+        name: "Scalevengers Merch - T-shirt Winch Winch Solution Long",
+        price: 350000,
+        image:
+          "https://down-id.img.susercontent.com/file/id-11134207-81ztq-mdvv5ql15og26e@resize_w900_nl.webp",
         stock: 10,
-        image: "https://picsum.photos/300",
+        description:
+          "T-shirt lengan panjang dengan desain Winch Winch Solution. Cocok untuk aktivitas outdoor dan trail ride.",
       },
     },
   },
@@ -36,11 +38,11 @@ const ENDPOINTS = [
     supportsBody: true,
     default: {
       body: {
-        name: "Produk Diperbarui",
+        name: "Updated Products",
         price: 299000,
         stock: 5,
         image: "https://picsum.photos/300",
-        description: "Deskripsi produk diperbarui",
+        description: "The product description has been updated.",
       },
     },
   },
