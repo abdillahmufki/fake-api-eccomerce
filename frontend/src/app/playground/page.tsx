@@ -3,7 +3,7 @@
 import { useState } from "react";
 import CodeBlock from "@/components/ui/CodeBlock";
 
-const API_BASE_URL = "http://localhost:4000";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 type HttpMethod = "GET" | "POST" | "PATCH" | "DELETE";
 
 const ENDPOINTS = [
