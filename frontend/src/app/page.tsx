@@ -52,7 +52,7 @@ export default function Home() {
                 <div className="shadow-2xl">
                   <div className="relative">
                     <CodeBlock
-                      title="GET http://localhost:4000/api/products?page=1&limit=1"
+                      title={`GET ${process.env.NEXT_PUBLIC_API_URL}/api/products?page=1&limit=1`}
                       language="json"
                       code={`{
   "success": true,
