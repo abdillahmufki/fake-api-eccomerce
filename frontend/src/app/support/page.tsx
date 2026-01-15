@@ -96,7 +96,7 @@ export default function SupportPage() {
 
           <p>
             <a
-              href="https://github.com/USERNAME/REPO"
+              href="https://github.com/abdillahmufki/fake-api-eccomerce"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-black"
