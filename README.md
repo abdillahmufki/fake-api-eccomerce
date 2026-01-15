@@ -57,13 +57,13 @@ This design keeps the API safe for public usage while still allowing you to prac
 GET /api/products?page=1&limit=5
 ```
 
-##Search
+## Search
 
 ```bash
 GET /api/products?search=sepatu
 ```
 
-##Example Response
+## Example Response
 
 ```json
 {
@@ -87,7 +87,7 @@ GET /api/products?search=sepatu
 }
 ```
 
-##Playground
+## Playground
 
 This project includes an interactive API Playground where you can:
 
@@ -99,15 +99,16 @@ This project includes an interactive API Playground where you can:
 
 👉 Open the Playground from the UI.
 
-##ech Stack
-Backend
+## tech Stack
+
+### Backend
 
 - Node.js
 - Express
 - TypeScript
 - SQLite
 
-##Frontend
+### Frontend
 
 - Next.js (App Router)
 - Tailwind CSS
