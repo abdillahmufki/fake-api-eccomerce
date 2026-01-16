@@ -13,7 +13,7 @@ export default function DocsPage() {
           </span>
 
           <h1 className="text-4xl font-extrabold mb-4">
-            Fake E-Commerce API Docs
+            Mockmart E-Commerce API Docs
           </h1>
 
           <p className="text-lg text-gray-600 max-w-2xl">
@@ -86,7 +86,9 @@ export default function DocsPage() {
         </div>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
-          <h3 className="text-lg font-semibold mb-2">⚠️ Fake Write Behavior</h3>
+          <h3 className="text-lg font-semibold mb-2">
+            ⚠️ Mockmart Write Behavior
+          </h3>
           <p className="text-gray-700">
             This is a public fake API. POST, PATCH, and DELETE always return
             success but never persist data.

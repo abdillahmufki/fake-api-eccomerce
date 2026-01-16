@@ -1,4 +1,4 @@
-name: Deploy Fake E-Commerce Backend
+name: Deploy Mockmart E-Commerce Backend
 
 on:
   push:

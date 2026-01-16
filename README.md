@@ -1,4 +1,4 @@
-# 🛍️ Fake E-Commerce API
+# 🛍️ Mockmart E-Commerce API
 
 A **public, open-source fake e-commerce API** built to help frontend developers practice real-world API usage such as data fetching, pagination, search, validation errors, and UI state management — without worrying about authentication or data persistence.
 
@@ -13,13 +13,13 @@ A **public, open-source fake e-commerce API** built to help frontend developers 
 - ✅ Realistic REST API responses
 - ✅ Pagination & search
 - ✅ Schema validation (invalid fields return errors)
-- ✅ Fake write operations (safe for public use)
+- ✅ Mockmart write operations (safe for public use)
 - ✅ Interactive Playground UI
 - ✅ Beginner-friendly documentation
 
 ---
 
-## 🚨 Important Note (Fake Write Behavior)
+## 🚨 Important Note (Mockmart Write Behavior)
 
 This is a **fake API**.
 

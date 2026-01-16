@@ -14,7 +14,7 @@ app.use(
 );
 
 app.get("/health", (req: Request, res: Response) => {
-  res.send("Welcome to the Fake E-commerce API!");
+  res.send("Welcome to the Mockmart E-commerce API!");
 });
 
 app.use("/api", productRoutes);
