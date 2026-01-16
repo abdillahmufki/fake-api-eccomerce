@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { ProductService } from "./product.service";
 import { ProductRepository } from "./product.repository";
-import test from "node:test";
 
 const repo = new ProductRepository();
 const service = new ProductService(repo);
@@ -34,7 +33,6 @@ export class ProductController {
         page,
         limit,
         totalPages: Math.ceil(total / limit),
-        test: "value",
       },
     });
   }
