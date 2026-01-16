@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CodeBlock from "@/components/ui/CodeBlock";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export default function DocsPage() {
   return (
@@ -110,27 +110,29 @@ export default function DocsPage() {
               <CodeBlock
                 title="cURL"
                 language="bash"
-                code={`curl "\https://fake-api.smart-greenhouse.my.id/api/products?page=1&limit=5&search=shirt"`}
+                code={`curl "\https://fake-api.smart-greenhouse.my.id/api/products?page=1&limit=5&search=Winch"`}
               />
 
               <CodeBlock
                 title="Response"
                 code={`{
   "success": true,
+  "message": "Products fetched successfully",
   "data": [
     {
       "id": 1,
       "name": "Scalevengers Merch - T-shirt Winch Winch Solution Long",
       "price": 350000,
-      "image": "https://picsum.photos/300",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztq-mdvv5ql15og26e@resize_w900_nl.webp",
       "stock": 10,
-      "description": "T-shirt lengan panjang dengan desain Winch Winch Solution."
+      "description": "T-shirt lengan panjang dengan desain Winch Winch Solution. Cocok untuk aktivitas outdoor dan trail ride."
     }
   ],
   "meta": {
+    "total": 1,
     "page": 1,
     "limit": 5,
-    "total": 42
+    "totalPages": 1
   }
 }`}
               />

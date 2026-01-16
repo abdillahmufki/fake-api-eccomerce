@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="font-bold text-lg">
-          Fake<span className="text-gray-400">API</span>
+          Mockmart<span className="text-gray-400">API</span>
         </Link>
 
         {/* Desktop Menu */}

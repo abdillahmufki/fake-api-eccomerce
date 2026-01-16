@@ -17,7 +17,7 @@ export default function Home() {
             </span>
 
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
-              Fake E-Commerce <br />
+              Mockmart E-Commerce <br />
               <span className="text-gray-400">API for Frontend</span>
             </h1>
 
