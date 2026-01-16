@@ -7,8 +7,6 @@ const service = new ProductService(repo);
 
 const ALLOWED_FIELDS = ["name", "price", "description", "stock", "image"];
 
-console.log("test");
-
 function validateBody(body: any) {
   const keys = Object.keys(body);
   return keys.filter((key) => !ALLOWED_FIELDS.includes(key));
