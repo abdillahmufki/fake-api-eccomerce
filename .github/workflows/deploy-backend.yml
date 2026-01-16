@@ -1,4 +1,4 @@
-name: Deploy Backend API
+name: Deploy Fake E-Commerce Backend
 
 on:
   push:
@@ -9,42 +9,29 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup SSH
+      - name: Deploy backend with PM2
         run: |
-          mkdir -p ~/.ssh
-          chmod 700 ~/.ssh
+          cd /home/mufkimustache/projects/fake-api-eccomerce
 
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
+          echo "🔄 Pull latest code"
+          git pull origin master
 
-          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-          chmod 644 ~/.ssh/known_hosts
+          echo "📦 Install dependencies"
+          cd backend
+          npm install
 
-      - name: Deploy Backend
-        run: |
-          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
-            set -e
+          echo "🏗 Build backend"
+          npm run build
 
-            cd ${{ secrets.SSH_PATH }}
+          echo "🚀 Reload PM2"
+          pm2 reload fake-ecommerce-api
 
-            echo "Pull latest code"
-            git pull origin master
+          pm2 save
 
-            echo "Install backend dependencies"
-            cd backend
-            npm install
-
-            echo "Build backend"
-            npm run build
-
-            echo "Reload PM2"
-            pm2 reload fake-ecommerce-api
-
-            pm2 save
-          EOF
+          echo "✅ Deploy finished"
