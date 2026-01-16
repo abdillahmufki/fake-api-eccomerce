@@ -26,7 +26,7 @@ export default function CodeBlock({ code, language = "json", title }: Props) {
   };
 
   return (
-    <div className="relative rounded-xl overflow-hidden bg-[#0f172a] shadow-2xl">
+    <div className="relative rounded-xl overflow-hidden bg-[#0f172a] shadow-2xl my-2">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-2 text-xs text-gray-400 bg-[#020617] border-b border-gray-800">
         <span className="font-mono">
@@ -41,7 +41,7 @@ export default function CodeBlock({ code, language = "json", title }: Props) {
         </button>
       </div>
 
-      {/* Code */}
+      {/* CodeBlock */}
       <pre className="overflow-x-auto text-sm p-4">
         <code ref={ref} className={`language-${language}`}>
           {code}

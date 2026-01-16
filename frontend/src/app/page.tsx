@@ -52,21 +52,25 @@ export default function Home() {
                 <div className="shadow-2xl">
                   <div className="relative">
                     <CodeBlock
-                      title="GET /api/products?page=1&limit=5"
+                      title={`GET ${process.env.NEXT_PUBLIC_API_URL}/api/products?page=1&limit=1`}
                       language="json"
                       code={`{
   "success": true,
   "data": [
     {
       "id": 1,
-      "name": "Sepatu Lari",
+      "name": "Scalevengers Merch - T-shirt Winch Winch Solution Long",
       "price": 350000,
-      "stock": 10
+      "stock": 10,
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztq-mdvv5ql15og26e@resize_w900_nl.webp",
+      "description": "T-shirt lengan panjang dengan desain Winch Winch Solution. Cocok untuk aktivitas outdoor dan trail ride."
     }
   ],
   "meta": {
+   "total": 5,
     "page": 1,
-    "total": 20
+    "limit": 1,
+    "totalPages": 5
   }
 }`}
                     />
